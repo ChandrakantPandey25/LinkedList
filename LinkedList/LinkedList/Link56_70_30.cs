@@ -4,12 +4,12 @@ using System.Text;
 
 namespace LinkedList
 {
-    class Link56_30_70
+    class Link56_70_30
     {
         public Node Head;
         public Node Tail;
 
-        public Link56_30_70()
+        public Link56_70_30()
         {
             Head = null;
             Tail = null;
