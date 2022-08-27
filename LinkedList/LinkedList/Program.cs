@@ -12,6 +12,7 @@ namespace LinkedList
             Console.WriteLine("Enter 3 to create LinkListAppend_UC_3 linkedlist");
             Console.WriteLine("Enter 4 to create LinkListInsertion linkedlist");
             Console.WriteLine("Enter 5 to create LinkListDeleteFirstNode linkedlist");
+            Console.WriteLine("Enter 6 to create LinklistDeleteLastNode linkedlist");
 
 
             switch(Convert.ToInt32(Console.ReadLine()))
@@ -61,6 +62,16 @@ namespace LinkedList
                     list.Display();
                     list.DeleteNodeAtFirst();
                     list.Display();
+                    break;
+                case 6:
+                    Console.WriteLine("Delete Last Node");
+                    LinklistDeleteLastNode deleteNode = new LinklistDeleteLastNode();
+                    deleteNode.AddNode(56);
+                    deleteNode.AddNode(30);
+                    deleteNode.AddNode(70);
+                    deleteNode.Display();
+                    deleteNode.DeleteLastNode();
+                    deleteNode.Display();
                     break;
 
             }
