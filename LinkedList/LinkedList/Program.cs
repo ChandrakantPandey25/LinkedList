@@ -10,6 +10,7 @@ namespace LinkedList
             Console.WriteLine("Enter 1 to create simple linkedlist");
             Console.WriteLine("Enter 2 to create Link_56_30_70 linkedlist");
             Console.WriteLine("Enter 3 to create LinkListAppend_UC_3 linkedlist");
+            Console.WriteLine("Enter 4 to create LinkListInsertion linkedlist");
 
 
             switch(Convert.ToInt32(Console.ReadLine()))
@@ -37,13 +38,18 @@ namespace LinkedList
                     break;
                 case 3:
                     LinkListAppend_UC_3 linkTwo = new LinkListAppend_UC_3();
-                    Node node7 = new Node(30);
-                    Node node8 = new Node(56);
-                    Node node9 = new Node(70);
                     linkTwo.Append(56);
                     linkTwo.Append(30);
                     linkTwo.Append(70);                    
                     linkTwo.Display();
+                    break;
+                case 4:
+                    LinkedListInsertion linkThree = new LinkedListInsertion();
+                    linkThree.insert(56);
+                    linkThree.insert(70);
+                    linkThree.insert(30);     
+
+                    linkThree.Display();
                     break;
 
             }
