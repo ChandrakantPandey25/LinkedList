@@ -6,20 +6,12 @@ namespace LinkedList
 {
     class Link56_70_30
     {
-        public Node Head;
-        public Node Tail;
-
-        public Link56_70_30()
-        {
-            Head = null;
-            Tail = null;
-        }
+        public Node Head;           
         public void AddNode(Node node)
         {
-            if(Head==null && Tail==null)
+            if(Head==null )
             {
-                Head = node;
-                Tail = node;
+                Head = node;                
 
             }
             else
@@ -27,6 +19,7 @@ namespace LinkedList
                 node.next = Head;
                 Head = node;
             }
+            Console.WriteLine("{0} Node added to linkedlist",node.data);
         }
         internal void Display()
         {
