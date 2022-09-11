@@ -6,12 +6,10 @@ namespace LinkedList
 {
     class LinkListAppend_UC_3
     {
-        public Node Head;
-        public Node Tail;
+        public Node Head;       
         public LinkListAppend_UC_3()
         {
-            Head = null;
-            Tail = null;
+            Head = null;           
         }
 
         public void Append(int data)
