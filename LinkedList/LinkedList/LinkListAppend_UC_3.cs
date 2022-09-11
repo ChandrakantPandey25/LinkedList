@@ -24,19 +24,12 @@ namespace LinkedList
 
             else
             {
-                
-                Node temp = Head;
-
-                while (temp.next != null)
-                
-                {
-                    
-                    temp = temp.next;
-                }
-                temp.next = node;
+                node.next = Head;
+                Head = node;               
+               
             }
 
-            Console.WriteLine("Appended the Node:" + data);
+            Console.WriteLine("Appended the Node:" + node.data);
         }
         internal void Display()
         {

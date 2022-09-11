@@ -36,13 +36,10 @@ namespace LinkedList
                     linkOne.Display();
                     break;
                 case 3:
-                    LinkListAppend_UC_3 linkTwo = new LinkListAppend_UC_3();
-                    Node node7 = new Node(30);
-                    Node node8 = new Node(56);
-                    Node node9 = new Node(70);
-                    linkTwo.Append(56);
+                    LinkListAppend_UC_3 linkTwo = new LinkListAppend_UC_3();                    
+                    linkTwo.Append(70);
                     linkTwo.Append(30);
-                    linkTwo.Append(70);                    
+                    linkTwo.Append(56);                    
                     linkTwo.Display();
                     break;
 
